@@ -1,7 +1,7 @@
-import Button from './Button';
 import { useState } from 'react';
-import Content from './Content';
 
+import Button from './Button';
+import Content from './Content';
 import './Tabs.css';
 
 const Tabs = () => {
