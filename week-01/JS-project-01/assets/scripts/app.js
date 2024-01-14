@@ -6,3 +6,6 @@
 // console.log(util.name);
 // console.log(apiKey);
 // console.log(nickname);
+
+console.log();
+console.log(10 >= 5);
