@@ -1,23 +1,22 @@
-// export default function () {
-//     console.log('hello');
-// }
+const alphabet = ['a', 'b', 'c', 'd'];
+// console.log(...alphabet);
 
-// export default (userName, message) => {
-//     console.log('hello');
+alphabet.push('e');
+// console.log(...alphabet);
 
-//     return userName + message;
-// };
+const index = alphabet.findIndex((item) => item === 'c');
 
-const user = {
-    name: 'dobby',
-    age: 26,
-    greet() {
-        console.log('hi?');
-        console.log(this.age);
-    },
-};
+console.log(index);
 
-console.log(user);
-console.log(user.name, user.age);
+const editedAlphabet = alphabet.map((item) => ({ text: item }));
+console.log(...editedAlphabet);
 
-user.greet();
+function transformToObjects(numberArray) {
+    // Todo: Add your logic
+    // should return an array of objects
+    const transNumberArray = numberArray.map((item) => ({ val: item }));
+
+    return transNumberArray;
+}
+
+const numberArray = [1, 2, 3];
