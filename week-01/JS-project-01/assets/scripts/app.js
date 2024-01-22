@@ -1,11 +1,23 @@
-// import { apiKey } from './util.js';
-// import { apiKey, name as nickname } from './util.js';
-// import * as util from './util.js';
+// export default function () {
+//     console.log('hello');
+// }
 
-// console.log(util.apiKey);
-// console.log(util.name);
-// console.log(apiKey);
-// console.log(nickname);
+// export default (userName, message) => {
+//     console.log('hello');
 
-console.log();
-console.log(10 >= 5);
+//     return userName + message;
+// };
+
+const user = {
+    name: 'dobby',
+    age: 26,
+    greet() {
+        console.log('hi?');
+        console.log(this.age);
+    },
+};
+
+console.log(user);
+console.log(user.name, user.age);
+
+user.greet();
