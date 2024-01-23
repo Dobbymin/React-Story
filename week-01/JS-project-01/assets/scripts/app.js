@@ -1,22 +1,21 @@
-const alphabet = ['a', 'b', 'c', 'd'];
-// console.log(...alphabet);
+const userNameData = ['min', 'dobby'];
 
-alphabet.push('e');
-// console.log(...alphabet);
+// const firstName = userNameData[0];
+// const lastName = userNameData[1];
 
-const index = alphabet.findIndex((item) => item === 'c');
+const [firstName, lastName] = ['min', 'dobby'];
 
-console.log(index);
+console.log(firstName, lastName);
 
-const editedAlphabet = alphabet.map((item) => ({ text: item }));
-console.log(...editedAlphabet);
+// const user = {
+//     name: 'dobby',
+//     age: 26,
+// };
 
-function transformToObjects(numberArray) {
-    // Todo: Add your logic
-    // should return an array of objects
-    const transNumberArray = numberArray.map((item) => ({ val: item }));
+// const name = user.name;
+// const age = user.age;
 
-    return transNumberArray;
-}
-
-const numberArray = [1, 2, 3];
+const { name: userName, age } = {
+    name: 'dobby',
+    age: 26,
+};
