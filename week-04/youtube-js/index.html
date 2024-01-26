@@ -5,13 +5,15 @@
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Youtube Mobile</title>
+        <script src="https://kit.fontawesome.com/6811ddb39d.js" crossorigin="anonymous"></script>
+        <script src="main.js" defer></script>
     </head>
     <body>
         <!-- Header-->
         <header>
             <div class="logo">
                 <i class="fab fa-youtube"></i>
-                <span class="title">Youtube</span>
+                <span class="title">Premium</span>
             </div>
             <div class="icons">
                 <i class="fas fa-search"></i>
@@ -21,23 +23,91 @@
 
         <!-- Video Player -->
         <section class="player">
-            <video controls src="video/video.mp4" width="400px"></video>
+            <video controls src="video/video.mp4" width="400rem"></video>
         </section>
 
         <!-- Video Info -->
         <section class="info">
             <div class="metadata">
                 <ul class="hashtags">
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>#백엔드</li>
+                    <li>#로그인</li>
+                    <li>#JMT</li>
                 </ul>
-                <div class="titleAndButton"></div>
-                <div class="views"></div>
+                <div class="titleAndButton">
+                    <span class="title">JWT 대충 쓰면 님들 코딩인생 끝남</span>
+                    <button class="moreBtn">
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </div>
+                <div class="views">
+                    <span class="views">조회수 191,007회 2022. 12. 28.</span>
+                </div>
             </div>
-            <div class="actions"></div>
-            <div class="channel"></div>
+            <ul class="actions">
+                <li>
+                    <button><i class="active fas fa-thumbs-up"></i><span>4.3천</span></button>
+                </li>
+                <li>
+                    <button><i class="fas fa-thumbs-down"></i><span></span></button>
+                </li>
+                <li>
+                    <button><i class="fas fa-share"></i><span>공유</span></button>
+                </li>
+                <li>
+                    <button><i class="fas fa-download"></i><span>저장</span></button>
+                </li>
+                <li>
+                    <button><i class="fa-solid fa-scissors"></i><span>클립</span></button>
+                </li>
+                <li>
+                    <button><i class="fa-solid fa-flag"></i><span>신고</span></button>
+                </li>
+            </ul>
+
+            <!-- Channel Description-->
+            <div class="channel">
+                <div class="metadata">
+                    <img src="image/codingApple.jpeg" alt="" />
+                    <div class="info">
+                        <span class="name">코딩애플</span>
+                        <span class="subscribers">23.4만</span>
+                    </div>
+                </div>
+                <button class="subscribe">구독</button>
+            </div>
         </section>
-        <section class="upNext"></section>
+        <section class="upNext">
+            <span class="title">Up Next</span>
+            <ul>
+                <li class="item">
+                    <img src="image/CA01.jpeg" width="200rem" alt="" />
+                    <div class="info">
+                        <span class="title">개발자 연봉 높이기 1. 구글이 100억개의 권한 관리하는 법</span>
+                        <span class="name">코딩애플</span>
+                        <span class="views">조회수 4.2만회</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <img src="image/CA02.jpeg" width="200rem" alt="" />
+                    <div class="info">
+                        <span class="title">바로 쿠팡 취업가능한 포토폴리오 만들기</span>
+                        <span class="name">코딩애플</span>
+                        <span class="views">조회수 9.9만회</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <img src="image/CA03.jpeg" width="200rem" alt="" />
+                    <div class="info">
+                        <span class="title">2023 '모던' 웹개발자 하려면 배울 것들</span>
+                        <span class="name">코딩애플</span>
+                        <span class="views">조회수 11만회</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+            </ul>
+        </section>
     </body>
 </html>
